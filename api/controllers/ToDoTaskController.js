@@ -52,9 +52,8 @@ module.exports = {
     if (req.method == "POST") {
       ToDoTask.destroy({
         id
-      }).then(function() {
-        console.log("hi");
-        return res.ok();
+      }).then(async function() {
+        return res.send(await ToDoTask.find());
       });
     } else {
       return res.serverError();

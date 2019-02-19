@@ -33,7 +33,10 @@ module.exports.routes = {
    * not match any of those, it is matched against static assets.             *
    *                                                                          *
    ***************************************************************************/
-  "todotask/task/*": "ToDoTaskController.task",
+  "get todotask/task": {
+    controller: "todotask",
+    action: "task"
+  },
 
   "get todotask/list": {
     controller: "todotask",
@@ -41,12 +44,14 @@ module.exports.routes = {
   },
   "post todotask/add/:id/:taskName/:taskDetail/:taskDate": {
     controller: "todotask",
-    action: "/add"
+    action: "add"
   },
   "post todotask/remove": {
-    action: "todotask/remove"
+    controller: "todotask",
+    action: "remove"
   },
   "post todotask/edit": {
-    action: "todotask/edit"
+    controller: "todotask",
+    action: "edit"
   }
 };

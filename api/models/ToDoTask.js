@@ -6,15 +6,15 @@
  */
 
 module.exports = {
-    attributes: {
-        taskName: {
-            type: 'string'
-        },
-        taskDetail: {
-            type: 'string'
-        },
-        taskDate: {
-            type: 'string'
-        }
+  attributes: {
+    taskName: {
+      type: "string"
     },
+    taskDetail: {
+      type: "string"
+    },
+    taskDate: {
+      type: "string"
+    }
+  }
 };
