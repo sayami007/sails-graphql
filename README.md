@@ -1,1 +1,5 @@
-# Trail
+# Sails-Graphql Implementation
+
+Folders:
+-- graph
+
