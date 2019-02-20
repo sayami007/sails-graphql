@@ -61,5 +61,8 @@ This project is backend for the To Do Task application.
 4. Open _**./graphql**_ folder and run the follwing command:
    `npm install`
 
-5. Open the browser and run the following link for using graphql.
+5.  Run the project with following code:
+   `node index.js`
+
+6. Open the browser and run the following link for using graphql.
    > http://localhost:4000/
