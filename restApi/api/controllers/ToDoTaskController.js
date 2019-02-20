@@ -46,19 +46,17 @@ module.exports = {
   },
 
   addRandom: async function(req, res) {
-    if (req.method == "POST") {
-      try {
-        for (let i = 0; i < 10; i++) {
-          await ToDoTask.create({
-            taskName: `TaskName:${i}`,
-            taskDetail: `TaskDetail:${i}`,
-            taskDate: `TaskDate:${i}`
-          });
-        }
-        return res.send(await ToDoTask.find());
-      } catch (err) {
-        return res.send(err);
+    try {
+      for (let i = 0; i < 10; i++) {
+        await ToDoTask.create({
+          taskName: `TaskName:${i}`,
+          taskDetail: `TaskDetail:${i}`,
+          taskDate: `TaskDate:${i}`
+        });
       }
+      return res.send(await ToDoTask.find());
+    } catch (err) {
+      return res.send(err);
     }
   },
 

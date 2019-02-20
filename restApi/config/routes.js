@@ -33,7 +33,7 @@ module.exports.routes = {
    * not match any of those, it is matched against static assets.             *
    *                                                                          *
    ***************************************************************************/
-  "post todotask/addRandom": {
+  "get todotask/addRandom": {
     controller: "todotask",
     action: "addRandom"
   },
