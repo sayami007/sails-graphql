@@ -10,8 +10,6 @@
 
 - Wrapper for REST API in GraphQL
 
----
-
 ## 2. Folders Detail
 
 ### 2.1. ./restApi:
@@ -46,13 +44,9 @@
 
 - Schema for the graphql
 
----
-
 # 3. Overview of the project:
 
 This project is backend for the To Do Task application.
-
----
 
 # 4. Steps for running the project:
 
@@ -62,8 +56,7 @@ This project is backend for the To Do Task application.
    `sails lift`
 3. Open the browser and run the following link:
 
-   > http://localhost:1337/todotask/addRandom
-   > (addRandom controller is used to add random data in the database)
+   > http://localhost:1337/todotask/addRandom (addRandom controller is used to add random data in the database)
 
 4. Open _**./graphql**_ folder and run the follwing command:
    `npm install`
